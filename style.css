@@ -1,4 +1,4 @@
-*{
+ *{
 	padding: 0;
 	margin:0;
 	box-sizing: border-box;
@@ -25,44 +25,85 @@ header{
 .topo{
 	background-size: cover;
 }
-@media(max-width:425px){
-	header{
-		height:90vh;
-	}
-}
-.containerMenu__block{
-	width: 20%
-	height: 20vh;
-	/*background-color: black;*/
+.containerMenu	{
+	height: 20vh;	
 	position: fixed;
-	top: 120px;
+	top: 95px;
 }
 .containerMenu__blockimage{
-	/*width: 280px;*/
+	width: 35%;
 	height: 230px;
 }
-.containerMenu__blocknav{
+.containerMenu__nav{
 	/*width: 20%;*/
 	height: 200px;
 	flex-direction: column;
-	padding-top: 5vh;
+	padding-top: 2vh;
 	padding-left: 8vh;
 }
 .containerMenu__blocklinks{
 	margin-top: 20px;
-	font-size: 25px;	
+	font-size: 20px;
+	font-family: KorolevBold;
+	color: #006C1C;
+	text-decoration: none;	
+	text-transform: uppercase;
+}
+.containerMenu__blocklinks:hover{
+	color: #00C733;
+	text-decoration: underline;
+	cursor: pointer;
 }
 .containerHeader__blockparagrafo{
-	width: 41vw;
+	width: 40vw;
 	height: 30vh;
-	align-self: center;
-	position: relative;
-	top: 47%;
-	left: 26%;
+	position: absolute;
+	top: 53%;
+	left: 25%;
 }
 .containerHeader__paragrafo{
-	font-size: 1.3em;
+	font-size: 1.5em;
 	text-align: left;
+	font-family:  KorolevMedium;
+}
+
+strong{
+	font-family: KorolevHeavy
+}
+label{
+	font-size: 50px;
+	display: none;
+}
+input{
+	display: none;
+}
+
+.fodabro{
+	font-family: KorolevHeavy;
+}	
+
+@media (max-width: 900px){
+	.containerHeader__blockparagrafo{
+		width: 50vw;
+		left: 35%;
+	}
+}
+@media (max-width: 768px){
+	.containerMenu{
+		position: static;
+	}
+	.containerMenu__blockimage{
+		padding-top: 20px;
+	}
+	.containerHeader__paragrafo{
+		font-size: 1.3em;
+	}
+	.containerHeader__blockparagrafo{
+		top: 47%;
+	}
+	.containerMenu__blocklinks{
+		font-size: 18px;
+	}
 }
 .containerImagesPrincipal{
 	display: flex;
@@ -77,6 +118,12 @@ header{
 	position: relative;
 	bottom:87px;
 	right:50px;
+}
+@media (max-width: 1020px){
+	.containerMenu__blockimage{
+		width: 240px;
+		height: 220px;
+	}
 }
 @media(max-width:800px){
 	.containerImagesPrincipal__block{
@@ -97,7 +144,12 @@ header{
 	.containerImagesPrincipal__blockImage{
 		width:90%;
 		margin:8px;
-	}	
+	}
+}	
+@media(max-width:425px){
+	header{
+/*		height:90vh;*/
+	}
 }
 .containerfirstmain{
 	display: flex;
@@ -430,7 +482,7 @@ header{
 @media (max-width: 630px){
 	.containerfooter__block{
 		width: 100%;
-		height: 610px;
+		height: 590px;
 		flex-direction: column-reverse;
 		align-items: center;
 
