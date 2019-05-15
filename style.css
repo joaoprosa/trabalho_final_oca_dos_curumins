@@ -183,22 +183,28 @@ input{
 }
 @media(max-width:768px){
 	.containerfirstmain__block{
+		width:auto;
 		justify-content:space-around;
 		margin-left:0;
 	}
 }
 .containerfirstmain__blockSubBlock{
-	width: 25%;
+	width: 21%;
 	height:169px;
 	display: flex;
 	justify-content: center;
 	align-items:center;
 	flex-direction: column;
 }
-@media(max-width: 520px){
+@media(max-width:768px){
+	.containerfirstmain__blockSubBlock{
+		width:26%;
+	}
+}
+@media(max-width: 560px){
 	.containerfirstmain__blockSubBlock{
 		width:50%;
-		height:128px;
+		height:146px;
 	}
 }
 .containerfirstmain__blockImage{
