@@ -31,14 +31,16 @@ header{
 	top: 95px;
 }
 .containerMenu__blockimage{
-	width: 35%;
-	height: 230px;
+	position: fixed;
+	width: 270px;
+	height: 220px;
+	margin-top: 5vh;
 }
 .containerMenu__nav{
 	/*width: 20%;*/
 	height: 200px;
 	flex-direction: column;
-	padding-top: 2vh;
+	padding-top: 33vh;
 	padding-left: 8vh;
 }
 .containerMenu__blocklinks{
@@ -90,6 +92,7 @@ label{
 		position: static;
 	}
 	.containerMenu__blockimage{
+		/*display: block;*/
 		padding-top: 20px;
 	}
 	.containerHeader__paragrafo{
@@ -98,6 +101,9 @@ label{
 	.containerHeader__blockparagrafo{
 		top: 47%;
 		width: 60vw;
+	}
+	.containerMenu__nav{
+		 margin-top: 40px;
 	}
 	.containerMenu__blocklinks{
 		font-size: 18px;
@@ -111,17 +117,21 @@ label{
 		left: 20px;
 		z-index: 99;
 	}
+	header{
+		background-image: url(assets/degrade-vertical.png);
+	}
 	.containerMenu{
 		display: none;
 	}
+
 	#mobile:checked~ .containerMenu{
 		display: block;
 	}
 	.containerMenu__blockimage{
-		width: 
-		display: block;
+		width: 230px;
+		height: 210px;
 		position: absolute;
-		left: 45%;	
+		left: 23%;	
 	}
 	.containerMenu__nav{
 		display: block;
@@ -133,7 +143,8 @@ label{
 		padding-top: 60px;
 		background-color: blue;
 		border-radius: 0px 0px 20px 0px;
-		flex-direction: column
+		flex-direction: column;
+		z-index: 1	
 	}
 	.containerMenu__blocklinks{
 		margin-top: 30px;
@@ -142,7 +153,11 @@ label{
 		width: 80vw;
 		left: 50px;
 	}
-}
+	.containerImagesPrincipal{
+		justify-content: center;
+		margin-right: 55px;
+	}
+} 
 .containerImagesPrincipal{
 	display: flex;
 	justify-content: flex-end;
@@ -159,13 +174,17 @@ label{
 }
 @media (max-width: 1020px){
 	.containerMenu__blockimage{
-		width: 240px;
-		height: 220px;
+		width: 230px;
+		height: 200px;
+		margin-top: 20px;
+	}
+	.containerHeader__paragrafo{
+		font-size: 1.3em;
 	}
 }
 @media(max-width:800px){
 	.containerImagesPrincipal__block{
-		width: 90%;
+		width: 80%;
     	right: 26px;
 	}
 }
@@ -221,6 +240,7 @@ label{
 }
 @media(max-width:768px){
 	.containerfirstmain__block{
+		width: 100%;
 		justify-content: space-around;
 		margin-left: 0;
 	}
