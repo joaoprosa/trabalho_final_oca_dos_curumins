@@ -32,7 +32,7 @@ header{
 }
 .containerMenu__blockimage{
 	position: fixed;
-	width: 270px;
+	width: 230px;
 	height: 220px;
 	margin-top: 5vh;
 }
@@ -73,7 +73,7 @@ strong{
 	font-family: KorolevHeavy
 }
 label{
-    font-size: 30px;
+    font-size: 40px;
     display: none;
     width: 60px;
     justify-content: flex-start;
@@ -81,6 +81,7 @@ label{
   #mobile{
     display: none;
 }
+
 @media (max-width: 900px){
 	.containerHeader__blockparagrafo{
 		width: 50vw;
@@ -92,8 +93,10 @@ label{
 		position: static;
 	}
 	.containerMenu__blockimage{
-		/*display: block;*/
-		padding-top: 20px;
+		width: 220px;
+		height: 200px;
+		position: absolute;
+		margin-top: 20px;
 	}
 	.containerHeader__paragrafo{
 		font-size: 1.3em;
@@ -112,6 +115,7 @@ label{
 @media (max-width: 475px){
 	label{
 		display: block;
+		padding-left: 15px;
 		position: absolute;
 		top: 30px;
 		left: 20px;
@@ -128,20 +132,20 @@ label{
 		display: block;
 	}
 	.containerMenu__blockimage{
-		width: 230px;
-		height: 210px;
+		width: 130px;
+    	height: 90px;
 		position: absolute;
-		left: 23%;	
+		left: 30%;	
 	}
 	.containerMenu__nav{
 		display: block;
-		width: 150px;
-		height: 330px;
+		width: 165px;
+		height: 356px;
 		position: absolute;
-		bottom: 246px;
-		padding-left: 4vh;
-		padding-top: 60px;
-		background-color: blue;
+		bottom: 220px;
+		padding-left: 7vh;
+		padding-top: 70px;
+		background-color: white;
 		border-radius: 0px 0px 20px 0px;
 		flex-direction: column;
 		z-index: 1	
@@ -155,7 +159,6 @@ label{
 	}
 	.containerImagesPrincipal{
 		justify-content: center;
-		margin-right: 55px;
 	}
 } 
 .containerImagesPrincipal{
@@ -172,15 +175,6 @@ label{
 	bottom: 87px;
 	right: 50px;
 }
-@media (max-width: 1020px){
-	.containerMenu__blockimage{
-		width: 230px;
-		height: 200px;
-		margin-top: 20px;
-	}
-	.containerHeader__paragrafo{
-		font-size: 1.3em;
-	}
 }
 @media(max-width:800px){
 	.containerImagesPrincipal__block{
@@ -190,7 +184,7 @@ label{
 }
 @media(max-width:526px){
 	.containerImagesPrincipal__block{
-    	left: 0px;
+    	left: 0p;
 	}
 }
 .containerImagesPrincipal__blockImage{
@@ -203,34 +197,29 @@ label{
 		margin: 8px;
 	}
 }	
-@media(max-width:425px){
-	header{
-/*		height: 90vh;*/
-	}
-}
-.containerfirstmain{
+.containermain{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.containerfirstmainBlocktitle{
+.containermain__atividadestitulo{
 	width: 35%;
 	font-size: 28px;
 	font-family: KorolevHeavy;
 }
 @media(max-width:800px){
-	.containerfirstmainBlocktitle{
+	.containermain__atividadestitulo{
 		width: 51%;
 		font-size: 25px;
 	}
 }
 @media(max-width:472px){
-	.containerfirstmainBlocktitle{
+	.containermain__atividadestitulo{
 		width: 51%;
 		font-size: 25px;
 	}
 }
-.containerfirstmain__block{
+.containermain__atividadesBlock{
 	width: 70%;
 	display: flex;
 	justify-content: space-between;
@@ -239,13 +228,13 @@ label{
 	margin-top: 5%;
 }
 @media(max-width:768px){
-	.containerfirstmain__block{
+	.containermain__atividadesBlock{
 		width: 100%;
 		justify-content: space-around;
 		margin-left: 0;
 	}
 }
-.containerfirstmain__blockSubBlock{
+.containermain__atividadesblocks{
 	width: 25%;
 	height:169px;
 	display: flex;
@@ -254,24 +243,24 @@ label{
 	flex-direction: column;
 }
 @media(max-width: 520px){
-	.containerfirstmain__blockSubBlock{
+	.containermain__atividadesblocks{
 		width: 50%;
 		height: 128px;
 	}
 }
-.containerfirstmain__blockImage{
+.containermain__atividadesimages{
 	width: 80px;
 }
-.containerfirstmain__blockParagraphs{
+.containermain__atividadesparagrafo{
 	font-size: 15px;
 	font-family: KorolevBold;
 }
-.containersecondmain{
+.containermain__impacto{
     display: flex;
     justify-content: flex-end;
     margin-top: 4%;
 }
-.containersecondmainBlock{
+.containermain__impactoblock{
 	width: 75%;
     height: 330px;
     display: flex;
@@ -281,44 +270,44 @@ label{
     background-color: #006C1C;
 }
 @media(max-width:900px){
-	.containersecondmainBlock{
+	.containermain__impactoblock{
 		padding: 40px 64px 0px 30px;
 	}
 }
 @media(max-width:768px){
-	.containersecondmainBlock{
+	.containermain__impactoblock{
 		width: 100%;
     	align-items: center;
 	}
 }
 @media(max-width:629px){
-	.containersecondmainBlock{
+	.containermain__impactoblock{
 		height: 409px;
 		flex-direction: column;
 		padding: 37px;
 	}
 }
-.containersecondmainBlock__subBlock{
+.containermain__impactosubblock{
 	width: 36%;
     margin-top: 2%;
 }
 @media(max-width:629px){
-	.containersecondmainBlock__subBlock{
+	.containermain__impactosubblock{
 		width: 80%;
     	margin-top: 0;
 	}
 }
 @media(max-width:350px){
-	.containersecondmainBlock__subBlock{
+	.containermain__impactosubblock{
 		width: 100%;
 	}
 }
-.containersecondmainBlock__subBlockTitle{
+.containermain__impactotitle{
 	font-size: 35px;
 	font-family: KorolevHeavy;
 	color: #FFFF00;
 }
-.containersecondmainBlock__subBlockParagraph{
+.containermain__impactoparagrafo{
 	font-size: 18px;
 	font-family: KorolevMedium;
 	color: #fff;
@@ -326,38 +315,38 @@ label{
     margin-top: 23px;
 }
 @media(max-width:922px){
-	.containersecondmainBlock__subBlockParagraph{
+	.containermain__impactoparagrafo{
 		font-size: 15px;
 	}
 }
-.containersecondmain__image{
-	width: 60%;
-    height: 313px;
-    border-radius: 8%;
-    border: solid 11px #fff;
-    position: relative;
-    top: 4%;
+	.containermain__impactoimage{
+		width: 60%;
+	    height: 313px;
+	    border-radius: 8%;
+	    border: solid 11px #fff;
+	    position: relative;
+	    top: 4%;
 }
 @media(max-width: 900px){
-	.containersecondmain__image{
+	.containermain__impactoimage{
 		left: 9%;
     	top: 10%;
 	}
 }
 @media(max-width: 629px){
-	.containersecondmain__image{
+	.containermain__impactoimage{
 		width: 90%;
     	height: 254px;
     	left: 0;
 	}
 }
 @media(max-width: 350px){
-	.containersecondmain__image{
+	.containermain__impactoimage{
 	width: 295px;
     height: 218px;
 	}
 }
-.containerParceiros{
+.containermain__parceiros{
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -365,17 +354,17 @@ label{
 	padding: 142px 250px 0 0;
 }
 @media(max-width:768px){
-	.containerParceiros{
+	.containermain__parceiros{
 		padding: 142px 164px 0 0;
 	}
 }
-.containerParceirosTitle{
+.containermain__parceirostitulo{
 	width: 24%;
 	height: 80px;
 	font-size: 33px;
 	font-family: KorolevHeavy;
 }
-.containerParceiros__Block{
+.containermain__parceirosBlock{
 	width: 70%;
     display: flex;
     justify-content: space-between;
@@ -389,43 +378,43 @@ label{
 	}
 }
 @media(max-width:375px){
-	.containerParceiros__Block{
+	.containermain__parceirosBlock{
 		margin-left: 115px;
 	}
 }
-.containerParceiros__Block__subBlock{
-	width: 15vw;
-	height: 189px;
-	font-size: 18px;
-	font-family: KorolevBold;
-	text-align: center;
+	.containermain__parceirosblocks{
+		width: 15vw;
+		height: 189px;
+		font-size: 18px;
+		font-family: KorolevBold;
+		text-align: center;
 }
 @media(max-width:768px){
-	.containerParceiros__Block__subBlock{
+	.containermain__parceirosblocks{
 		width: 152px;
 	}
 }
 @media(max-width:468px){
-	.containerParceiros__Block__subBlock{
+	.containermain__parceirosblocks{
 		width: 102px;
 		font-size: 15px;
 	}
 }
 @media(max-width:375px){
-	.containerParceiros__Block__subBlock{
+	.containermain__parceirosblocks{
 		width: 71px;
 		font-size: 13px;
 	}
 }
 @media(max-width:320px){
-	.containerParceiros__Block__subBlock{
+	.containermain__parceirosblocks{
 		width: 53px;
 	}
-	.paragraphparceiros{
+	.containermain__parceirosparagrafo{
 		width: 33vw;
 	}
 }
-.containerParceiros__image{
+.containermain__parceirosimages{
 	width: 100px;
 	height: 100px;
 }
@@ -453,6 +442,7 @@ label{
 .containerfooter__blockcontatos{
 	width: 30vw;
 	height: 40vh;
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 }
@@ -462,15 +452,15 @@ label{
 	font-family: KorolevHeavy;
 }
 .endereco{
-	width:260px;
+	width: 295px;
 }
- .paragrafo, .paragrafoo {
+ .containerfooter__paragrafo, .containerfooter__paragrafoEmail {
  	color: white;
  	padding-top: 3vh;
  	font-size: 18px;
  	font-family: 'KorolevMedium';
  }
- .paragrafoo{
+ .containerfooter__paragrafoEmail{
  	padding-top: 0;
  }
 .containerfooter__div{
@@ -480,8 +470,8 @@ label{
 	/*justify-content:*/
 }
 .containerfooter__divimg{
-	width: 400px;
-	height: 280px;
+	width: 360px;
+    height: 250px;
 	display:flex;
 	position: relative;		
 	align-items: center;
@@ -490,24 +480,24 @@ label{
 	background-color: white;
 } 
 .containerfooter__divimagemcriança{
-	width: 370px;
-	height: 255px;
+	width: 335px;
+    height: 225px;
 	border-radius: 7%;
 	/*margin-top: 6px;*/
 }
-.imgfootervnw{
+.containerfooter__imagemvnw{
 	width: 50px;
 	height: 40px;
 	padding: 5px;
 }
-.divimgfootervnw{
+.containerfooter__vnw{
 	width: 100%;
 	height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.footerp{
+.containerdiv__paragrafo{
 	font-size: 10px;
 }
 @media (max-width: 855px){
@@ -525,12 +515,12 @@ label{
 		width: 100%;
 	}
 	.containerfooter__divimagemcriança{
-		width: 380px;
-		height: 255px;
+		width: 310px;
+		height: 230px;
 	}
 	.containerfooter__divimg{
-		width: 400px;
-		height: 275px;
+		width: 330px;
+		height: 250px;
 		margin-left: 50px;
 	}
 	.containerfooter__blockcontatos{
@@ -540,7 +530,8 @@ label{
 @media (max-width: 630px){
 	.containerfooter__block{
 		width: 100%;
-		height: 590px;
+		height: 470px;
+		margin-top: 60px;
 		flex-direction: column-reverse;
 		align-items: center;
 
@@ -551,8 +542,8 @@ label{
 		margin-left: 0;
 	}
 	.containerfooter__divimagemcriança{
-		width: 380px; 
-		height: 250px;
+		width: 380px;
+    	height: 200px;
 	}
 	.containerfooter__section{
 		height: 100vh;
@@ -565,7 +556,7 @@ label{
 	.containerfooter__h1{
 		font-size: 45px;
 	}
-	.pacontainerfooter__blockcontatosragrafo, .paragrafoo, .paragrafo, .endereço{
+	.containerfooter__paragrafo, .containerfooter__paragrafoEmail, .endereço{
 		font-size: 20px;	
 	}
 }
@@ -577,7 +568,6 @@ label{
 @media (max-width:425px){
 	.containerfooter__divimg{
 		width: 320px; 
-		height: 200px;
 		margin-left: 0;
 	}
 	.containerfooter__divimagemcriança{
@@ -592,7 +582,7 @@ label{
 @media (max-width: 375px){
 	.containerfooter__divimg{
 		width: 350px; 
-		height: 220px;
+		height: 255px;
 		margin-left: 0;
 	}
 	.containerfooter__divimagemcriança{
