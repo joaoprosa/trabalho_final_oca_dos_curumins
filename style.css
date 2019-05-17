@@ -140,9 +140,9 @@ label{
 		width: 165px;
 		height: 356px;
 		position: absolute;
-		bottom: 220px;
+		bottom: 230px;
 		padding-left: 7vh;
-		padding-top: 120px;
+    	padding-top: 90px;
 		background-color: white;
 		border-radius: 0px 0px 20px 0px;
 		flex-direction: column;
@@ -558,13 +558,12 @@ label{
 	}
 	.containerfooter__blockcontatos{
 		align-items: flex-start;
-		padding-left: 20px;
+		padding-left: 55px;
 	}
 }
 @media (max-width: 375px){
 	.containerfooter__divimg{
 		width: 350px; 
-		height: 255px;
 		margin-left: 0;
 	}
 	.containerfooter__divimagemcriança{
@@ -575,7 +574,6 @@ label{
 @media (max-width: 320px){
 	.containerfooter__divimg{
 		width: 300px; 
-		height: 180px;
 		margin-left: 0;
 	}
 	.containerfooter__divimagemcriança{
