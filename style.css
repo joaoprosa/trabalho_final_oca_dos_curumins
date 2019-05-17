@@ -22,7 +22,7 @@ header{
 	background-image: url(assets/fundo.png);
 	background-size: cover;
 }
-.topo{
+.header__imagetopo{
 	background-size: cover;
 }
 .containerMenu	{
@@ -112,13 +112,12 @@ label{
 		font-size: 18px;
 	}
 }
-@media (max-width: 475px){
+@media (max-width: 425px){
 	label{
 		display: block;
 		padding-left: 15px;
 		position: absolute;
 		top: 30px;
-		left: 20px;
 		z-index: 99;
 	}
 	header{
