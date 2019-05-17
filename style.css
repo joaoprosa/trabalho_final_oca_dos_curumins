@@ -110,7 +110,7 @@ label{
 		font-size: 18px;
 	}
 }
-@media (max-width: 475px){
+@media (max-width: 425px){
 	label{
 		display: block;
 		padding-left: 15px;
@@ -130,8 +130,8 @@ label{
 		display: block;
 	}
 	.containerMenu__blockimage{
-		width: 130px;
-    	height: 90px;
+		width: 150px;
+		height: 110px;
 		position: absolute;
 		left: 30%;	
 	}
@@ -142,7 +142,7 @@ label{
 		position: absolute;
 		bottom: 220px;
 		padding-left: 7vh;
-		padding-top: 70px;
+		padding-top: 120px;
 		background-color: white;
 		border-radius: 0px 0px 20px 0px;
 		flex-direction: column;
@@ -493,8 +493,6 @@ label{
 	}
 	.containerfooter__divimg{
 		width: 350px;
-		height: 250px;	
-	}
 }
 @media (max-width: 768px){
 	.containerfooter__section{
@@ -506,7 +504,6 @@ label{
 	}
 	.containerfooter__divimg{
 		width: 330px;
-		height: 250px;
 		margin-left: 50px;
 	}
 	.containerfooter__blockcontatos{
