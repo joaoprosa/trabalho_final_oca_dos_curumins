@@ -18,7 +18,6 @@
 header{
 	width: 100%;
 	height: 100vh;
-	/*display: flex;*/
 	background-image: url(assets/fundo.png);
 	background-size: cover;
 }
@@ -68,7 +67,6 @@ header{
 	text-align: left;
 	font-family:  KorolevMedium;
 }
-
 strong{
 	font-family: KorolevHeavy
 }
@@ -354,7 +352,7 @@ label{
 }
 @media(max-width:768px){
 	.containermain__parceiros{
-		padding: 142px 164px 0 0;
+		padding: 140px 330px 0px 0;
 	}
 }
 .containermain__parceirostitulo{
