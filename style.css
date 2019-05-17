@@ -21,7 +21,7 @@ header{
 	background-image: url(assets/fundo.png);
 	background-size: cover;
 }
-.header__imagetopo{
+.topo{
 	background-size: cover;
 }
 .containerMenu	{
@@ -66,6 +66,7 @@ header{
 	text-align: left;
 	font-family:  KorolevMedium;
 }
+
 strong{
 	font-family: KorolevHeavy
 }
@@ -109,12 +110,13 @@ label{
 		font-size: 18px;
 	}
 }
-@media (max-width: 425px){
+@media (max-width: 475px){
 	label{
 		display: block;
 		padding-left: 15px;
 		position: absolute;
 		top: 30px;
+		left: 20px;
 		z-index: 99;
 	}
 	header{
@@ -347,11 +349,8 @@ label{
 }
 @media(max-width:768px){
 	.containermain__parceiros{
-   }
 		padding:142px 0 0 0;
-   }
-		padding: 140px 330px 0px 0;
-	 }
+	}
 }
 .containermain__parceirostitulo{
 	width: 24%;
