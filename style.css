@@ -21,19 +21,14 @@ header{
 	background-image: url(assets/fundo.png);
 	background-size: cover;
 }
-.topo{
-	background-size: cover;
-}
-.containerMenu	{
-	height: 20vh;	
+.containerMenu{
 	position: fixed;
 	top: 95px;
 }
 .containerMenu__blockimage{
-	position: fixed;
 	width: 230px;
-	height: 220px;
-	margin-top: 5vh;
+	position: fixed;
+	margin-top: 40px;
 }
 .containerMenu__nav{
 	height: 200px;
@@ -100,7 +95,7 @@ label{
 		font-size: 1.3em;
 	}
 	.containerHeader__blockparagrafo{
-		top: 47%;
+		top: 50vh;
 		width: 60vw;
 	}
 	.containerMenu__nav{
@@ -137,12 +132,11 @@ label{
 	}
 	.containerMenu__nav{
 		display: block;
-		width: 165px;
-		height: 356px;
+		width: 45vw;
+		height: 65vh;
 		position: absolute;
-		bottom: 230px;
-		padding-left: 7vh;
-    	padding-top: 90px;
+		bottom: 35vh;
+    	padding-top: 15vh;
 		background-color: white;
 		border-radius: 0px 0px 20px 0px;
 		flex-direction: column;
@@ -413,6 +407,7 @@ label{
 	display: flex;
 	align-items: flex-end;
 	flex-direction: column;
+	z-index: 99;
 }
 .containerfooter__section{
 	width: 75%;
