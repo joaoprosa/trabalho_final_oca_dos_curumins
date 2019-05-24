@@ -5,15 +5,15 @@
 }
 @font-face{
 	font-family: 'KorolevBold';
-  src: url(assets/fonts/KorolevBold.woff) format("woff");
+  	src: url(assets/fonts/KorolevBold.woff) format("woff");
 }
 @font-face{
 	font-family: 'KorolevHeavy';
-  src: url(assets/fonts/KorolevHeavy.woff) format("woff");
+  	src: url(assets/fonts/KorolevHeavy.woff) format("woff");
 }
 @font-face{
 	font-family: 'KorolevMedium';
-  src: url(assets/fonts/KorolevMedium.woff) format("woff");
+  	src: url(assets/fonts/KorolevMedium.woff) format("woff");
 }
 header{
 	width: 100%;
@@ -37,10 +37,10 @@ header{
 	padding-left: 8vh;
 }
 .containerMenu__blocklinks{
-	margin-top: 20px;
 	font-size: 20px;
 	font-family: KorolevBold;
 	color: #006C1C;
+	margin-top: 20px;
 	text-decoration: none;	
 	text-transform: uppercase;
 }
@@ -131,15 +131,15 @@ label{
 		left: 30%;	
 	}
 	.containerMenu__nav{
-		display: block;
 		width: 45vw;
 		height: 65vh;
+		display: block;
+		flex-direction: column;
 		position: absolute;
 		bottom: 35vh;
     	padding-top: 15vh;
 		background-color: white;
 		border-radius: 0px 0px 20px 0px;
-		flex-direction: column;
 		z-index: 1	
 	}
 	.containerMenu__blocklinks{
@@ -226,8 +226,8 @@ label{
 	height:169px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
+	align-items: center;
 }
 @media(max-width: 520px){
 	.containermain__atividadesblocks{
@@ -330,8 +330,8 @@ label{
 }
 @media(max-width: 350px){
 	.containermain__impactoimage{
-	width: 295px;
-    height: 218px;
+		width: 295px;
+    	height: 218px;
 	}
 }
 .containermain__parceiros{
@@ -405,8 +405,8 @@ label{
 .containerfooter{
 	width: 100%;
 	display: flex;
-	align-items: flex-end;
 	flex-direction: column;
+	align-items: flex-end;
 	z-index: 99;
 }
 .containerfooter__section{
@@ -425,23 +425,23 @@ label{
 .containerfooter__blockcontatos{
 	width: 30vw;
 	height: 40vh;
-	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
+	margin-top: 20px;
 }
 .containerfooter__h1{	
 	font-size: 30px;
-	color: yellow;
 	font-family: KorolevHeavy;
+	color: yellow;
 }
 .endereco{
 	width: 295px;
 }
  .containerfooter__paragrafo, .containerfooter__paragrafoEmail {
- 	color: white;
- 	padding-top: 3vh;
  	font-size: 18px;
  	font-family: 'KorolevMedium';
+ 	color: white;
+ 	padding-top: 3vh;
  }
  .containerfooter__paragrafoEmail{
  	padding-top: 0;
@@ -454,11 +454,11 @@ label{
 .containerfooter__divimg{
 	width: 360px;
     height: 250px;
-	display:flex;
-	position: relative;		
+	display:flex;		
 	align-items: center;
 	justify-content: center;
 	border-radius: 7%;
+	position: relative;
 	background-color: white;
 } 
 .containerfooter__divimagemcriança{
@@ -509,9 +509,9 @@ label{
 	.containerfooter__block{
 		width: 100%;
 		height: 470px;
-		margin-top: 60px;
 		flex-direction: column-reverse;
 		align-items: center;
+		margin-top: 60px;
 	}
 	.containerfooter__divimg{
 		width: 400px; 
