@@ -379,6 +379,7 @@ label{
 @media(max-width:768px){
 	.containermain__parceirostitulo {
 		text-align: center;
+ 	}
 }
 .containermain__parceirosBlock{
 	width: 65%;
